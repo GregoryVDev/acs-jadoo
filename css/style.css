@@ -1,3 +1,16 @@
+/* GENERAL */
+
+/* * {
+  list-style: none;
+  text-decoration: none;
+} */
+
+/* HEADER */
+
+header li a {
+  font-family: "poppins-regular", sans-serif;
+}
+
 #picture h3 {
   text-transform: uppercase;
 }
