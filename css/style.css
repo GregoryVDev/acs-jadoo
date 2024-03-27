@@ -12,5 +12,21 @@ header li a {
 }
 
 #picture h3 {
+  font-size: 20px;
+  font-family: "poppins-bold", sans-serif;
+  color: #df6951;
   text-transform: uppercase;
+}
+
+/* SECTION PICTURE */
+
+#picture #description h2 {
+  font: 84px "volkhov-bold";
+  color: #ffff;
+}
+
+#description p {
+  font: 16px "poppins-regular";
+  color: #bfc0cd;
+  font-weight: 700;
 }
