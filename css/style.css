@@ -24,6 +24,18 @@ h4 {
   text-transform: uppercase;
 }
 
+label {
+  font: 16px "poppins-regular";
+  font-weight: 400;
+  color: #000;
+}
+
+::placeholder {
+  font: 13px "poppins-regular";
+  font-weight: 400;
+  color: #000;
+}
+
 /* HEADER */
 
 #logo {
@@ -69,10 +81,10 @@ button {
 #news h2 {
   font: 50px "volkhov-regular";
   font-weight: 700;
-  color: black;
+  color: #14183e;
 }
 
-#news p {
+#news figcaption {
   font: 16px "poppins-regular";
   font-weight: 400;
   color: #5e6282;
@@ -80,5 +92,57 @@ button {
 
 /* SECTION CHEF */
 
-#detail p {
+#detail h5 {
+  font: 16px "poppins-regular";
+  font-weight: 700;
+  color: #fff;
+}
+
+/* SECTION COMMANDE */
+
+#commande h2 {
+  color: #df6951;
+}
+
+#commande span {
+  color: #14183e;
+}
+
+#commande figcaption h4 {
+  color: #22232c;
+  font: 16px "poppins-bold";
+  font-weight: 400;
+  text-transform: none;
+}
+
+#commande figcaption p {
+  font: 16px "poppins-regular";
+  color: #3e3f43;
+  font-weight: 400;
+}
+
+/* SECTION CONTACT */
+
+#contact h2 {
+  font: 50px "volkhov-regular";
+  font-weight: 700;
+  color: #14183e;
+}
+
+#submit {
+  font: 13px "poppins-regular";
+  font-weight: 400;
+  color: black;
+}
+
+#formulaire h4 {
+  font: 18px "poppins-regular";
+  font-weight: 700;
+  text-transform: none;
+}
+
+#formulaire h5 {
+  font: 16px "poppins-regular";
+  font-weight: 700;
+  color: #8d8d8d;
 }
