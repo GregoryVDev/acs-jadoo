@@ -11,6 +11,12 @@ h2 {
   color: #ffff;
 }
 
+h3 {
+  font: 16px "poppins-bold";
+  font-weight: 400;
+  color: #1e1d4c;
+}
+
 h4 {
   font: 18px "poppins-regular";
   font-weight: 700;
@@ -54,6 +60,8 @@ button {
   font-weight: 400;
 }
 
+/* SECTION NEWS */
+
 /* #news {
   border: 3px solid black;
 } */
@@ -62,4 +70,15 @@ button {
   font: 50px "volkhov-regular";
   font-weight: 700;
   color: black;
+}
+
+#news p {
+  font: 16px "poppins-regular";
+  font-weight: 400;
+  color: #5e6282;
+}
+
+/* SECTION CHEF */
+
+#detail p {
 }
