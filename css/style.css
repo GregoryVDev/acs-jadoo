@@ -146,3 +146,49 @@ button {
   font-weight: 700;
   color: #8d8d8d;
 }
+
+/* FOOTER */
+
+footer #logojadoo p {
+  font: 16px "poppins-regular";
+  font-weight: 400;
+  color: #000;
+}
+
+footer h4 {
+  font: 16px "poppins-bold";
+  font-weight: 400;
+  color: #000;
+  text-transform: none;
+}
+
+footer li {
+  list-style: none;
+}
+
+footer a {
+  font: 16px "poppins-regular";
+  font-weight: 400;
+  color: #000;
+  text-decoration: none;
+}
+
+#applications p {
+  font: 16px "poppins-regular";
+  font-weight: 400;
+  color: #000;
+}
+
+footer button.google {
+  text-transform: uppercase;
+}
+
+footer button.apple {
+  text-transform: uppercase;
+}
+
+footer p {
+  font: 14px "poppins-regular";
+  font-weight: 400;
+  color: #000;
+}
