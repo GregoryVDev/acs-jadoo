@@ -5,7 +5,25 @@
   text-decoration: none;
 } */
 
+h1,
+h2 {
+  font: 84px "volkhov-bold";
+  color: #ffff;
+}
+
+h4 {
+  font: 18px "poppins-regular";
+  font-weight: 700;
+  color: #5e6282;
+  text-transform: uppercase;
+}
+
 /* HEADER */
+
+#logo {
+  /* border: 3px solid black; */
+  display: flex;
+}
 
 header li a {
   font-family: "poppins-regular", sans-serif;
@@ -20,13 +38,28 @@ header li a {
 
 /* SECTION PICTURE */
 
-#picture #description h2 {
-  font: 84px "volkhov-bold";
-  color: #ffff;
-}
+/* #picture {
+  border: 3px solid black;
+} */
 
-#description p {
+#description h5 {
   font: 16px "poppins-regular";
   color: #bfc0cd;
   font-weight: 700;
+}
+
+button {
+  color: white;
+  font: 13px "poppins-regular";
+  font-weight: 400;
+}
+
+/* #news {
+  border: 3px solid black;
+} */
+
+#news h2 {
+  font: 50px "volkhov-regular";
+  font-weight: 700;
+  color: black;
 }
