@@ -8,6 +8,14 @@
   padding: 0;
 }
 
+body {
+  background-color: #fefefe;
+}
+
+/* main {
+  border: 3px solid red;
+} */
+
 .logo {
   /* border: 3px solid gray; */
   display: flex;
@@ -51,6 +59,13 @@ label {
   color: #000;
 }
 
+button {
+  background-color: orange;
+  color: white;
+  font: 13px "poppins-regular";
+  font-weight: 400;
+}
+
 /* HEADER */
 
 header {
@@ -75,16 +90,13 @@ header ul {
   gap: 30px;
 }
 
-header li {
-}
-
 header li a {
   /* border: 3px solid salmon; */
   font-family: "poppins-regular", sans-serif;
   color: black;
 }
 
-/* :HOVER */
+/* HOVER */
 
 header ul li a:hover {
   text-decoration: underline;
@@ -93,56 +105,134 @@ header ul li a:hover {
 /* SECTION PICTURE */
 
 #picture {
-  border: 3px solid green;
+  /* border: 3px solid green; */
   background: url("../assets/illustration_principale.jpg") no-repeat;
+  background-size: cover;
+  height: 84vh;
+  padding: 100px 0 100px 150px;
 }
 
 #picture article {
-  border: 5px solid pink;
+  /* border: 5px solid pink; */
+  width: 50%;
 }
 
 #picture h1 {
-  border: 3px solid purple;
+  /* border: 3px solid purple; */
+  margin-top: 30px;
 }
 
 #picture h3 {
-  border: 3px solid orangered;
+  /* border: 3px solid orangered; */
   font-size: 20px;
   font-family: "poppins-bold", sans-serif;
   color: #df6951;
   text-transform: uppercase;
+  padding: 10px 0px;
+  margin-top: 10px;
 }
 
 #description h5 {
-  border: 3px solid yellow;
+  /* border: 3px solid yellow; */
   font: 16px "poppins-regular";
   color: #bfc0cd;
   font-weight: 700;
 }
 
-button {
-  border: 3px solid orange;
+.button-orange {
+  background-color: #f1a501;
   color: white;
-  font: 13px "poppins-regular";
+  font: 18px "poppins-regular";
   font-weight: 400;
+  border: transparent;
+  border-radius: 10px;
+  margin-top: 20px;
+  padding: 18px;
 }
 
 /* SECTION NEWS */
 
-/* #news {
-  border: 3px solid black;
-} */
+#news {
+  /* border: 3px solid #f1a501; */
+  /* display: flex; */
+}
+
+.container-fluid {
+  border: 3px solid brown;
+  margin: auto;
+  width: auto;
+}
+
+#news h4 {
+  /* border: 3px solid cadetblue; */
+  text-align: center;
+  text-transform: none;
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
 
 #news h2 {
+  /* border: 3px solid yellowgreen; */
   font: 50px "volkhov-regular";
   font-weight: 700;
   color: #14183e;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+/* CONTAINER NOUVEAUTES */
+
+#container-nouveautes {
+  /* border: 3px solid red; */
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+#news .carte img {
+  /* border: 3px solid yellowgreen; */
+  border-radius: 25px 25px 0 0;
+}
+
+#news figure {
+  /* border: 3px solid rgb(100, 52, 52); */
+  text-align: center;
 }
 
 #news figcaption {
+  /* border: 3px solid grey; */
   font: 16px "poppins-regular";
   font-weight: 400;
   color: #5e6282;
+  width: 60%;
+}
+
+/* CONTAINER MAKI */
+
+#container-maki {
+  border: 3px solid salmon;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 50px;
+}
+
+#container-maki .carte-maki {
+  border: 3px solid rgb(206, 205, 211);
+}
+
+.carte-maki {
+  border: 3px solid yellow;
+}
+
+/* HOVER */
+
+.carte-maki:hover {
+  background-color: red;
 }
 
 /* SECTION CHEF */
