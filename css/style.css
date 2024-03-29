@@ -1,9 +1,24 @@
 /* GENERAL */
 
-/* * {
+* {
   list-style: none;
   text-decoration: none;
-} */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  /* border: 3px solid gray; */
+  display: flex;
+  gap: 20px;
+  margin-left: 150px;
+}
+
+.logo img {
+  /* border: 3px solid purple; */
+  height: 30px;
+}
 
 h1,
 h2 {
@@ -38,35 +53,75 @@ label {
 
 /* HEADER */
 
-#logo {
-  /* border: 3px solid black; */
+header {
+  /* border: 3px solid green; */
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  background-color: white;
+  position: sticky;
+  top: 0px;
+}
+
+header nav {
+  /* border: 3px solid black; */
+  width: 35%;
+}
+
+header ul {
+  /* border: 3px solid yellow; */
+  display: inline-flex;
+  gap: 30px;
+}
+
+header li {
 }
 
 header li a {
+  /* border: 3px solid salmon; */
   font-family: "poppins-regular", sans-serif;
+  color: black;
+}
+
+/* :HOVER */
+
+header ul li a:hover {
+  text-decoration: underline;
+}
+
+/* SECTION PICTURE */
+
+#picture {
+  border: 3px solid green;
+  background: url("../assets/illustration_principale.jpg") no-repeat;
+}
+
+#picture article {
+  border: 5px solid pink;
+}
+
+#picture h1 {
+  border: 3px solid purple;
 }
 
 #picture h3 {
+  border: 3px solid orangered;
   font-size: 20px;
   font-family: "poppins-bold", sans-serif;
   color: #df6951;
   text-transform: uppercase;
 }
 
-/* SECTION PICTURE */
-
-/* #picture {
-  border: 3px solid black;
-} */
-
 #description h5 {
+  border: 3px solid yellow;
   font: 16px "poppins-regular";
   color: #bfc0cd;
   font-weight: 700;
 }
 
 button {
+  border: 3px solid orange;
   color: white;
   font: 13px "poppins-regular";
   font-weight: 400;
