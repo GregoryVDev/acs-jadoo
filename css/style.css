@@ -8,10 +8,6 @@
   padding: 0;
 }
 
-body {
-  background-color: #f6f6f6;
-}
-
 .logo {
   display: flex;
   gap: 20px;
@@ -58,6 +54,8 @@ button {
   color: white;
   font: 13px "poppins-regular";
   font-weight: 400;
+  box-shadow: 0px 20px 35px 5px rgba(241, 165, 1, 0.15);
+  cursor: pointer;
 }
 
 /* HEADER */
@@ -107,6 +105,8 @@ header ul li a:hover {
 
 #picture h1 {
   margin-top: 30px;
+  background: url("../assets/souligne_rose.svg") no-repeat;
+  background-position: left 2% bottom 5%;
 }
 
 #picture h3 {
@@ -121,25 +121,30 @@ header ul li a:hover {
 #description h5 {
   font: 16px "poppins-regular";
   color: #bfc0cd;
-  font-weight: 700;
+  font-weight: 500;
+  line-height: 30px;
+  margin: 25px 0 30px;
 }
 
 .button-orange {
   background-color: #f1a501;
   color: white;
-  font: 18px "poppins-regular";
+  font: 18px "arial";
   font-weight: 400;
   border: transparent;
   border-radius: 10px;
-  margin-top: 20px;
-  padding: 18px;
+  padding: 15px;
+}
+
+.button-orange:hover {
+  opacity: 0.9;
 }
 
 /* SECTION NEWS */
 
-.container-fluid {
-  margin: auto;
-  width: auto;
+#news {
+  background: url("../assets/decor_1.svg") no-repeat;
+  background-position: top 25px right 35px;
 }
 
 #news h4 {
@@ -150,18 +155,21 @@ header ul li a:hover {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  margin-bottom: 15px;
 }
 
 #news h2 {
-  font: 50px "volkhov-regular";
-  font-weight: 700;
+  font: 50px "volkhov-bold";
+  font-weight: 400;
   color: #14183e;
   display: flex;
   justify-content: center;
-  margin-bottom: 45px;
+  margin: 10px 0 45px;
 }
 
+#news .button-orange {
+  margin: auto;
+  display: block;
+}
 /* CONTAINER NOUVEAUTES */
 
 #container-nouveautes {
@@ -191,17 +199,18 @@ header ul li a:hover {
   border-radius: 0 0 25px 25px;
   line-height: 28px;
   box-shadow: 0px 4px 32px 5px rgba(0, 0, 0, 0.05);
+  z-index: 3;
 }
 
-#news article:first-child {
+#container-nouveautes article:first-child {
   width: 17%;
 }
 
-#news article:nth-last-child(2) {
+#container-nouveautes article:nth-last-child(2) {
   width: 17%;
 }
 
-#news article:last-child {
+#container-nouveautes article:last-child {
   width: 17%;
 }
 
@@ -218,7 +227,7 @@ header ul li a:hover {
   display: flex;
   justify-content: center;
   text-align: center;
-  margin-top: 5%;
+  margin: 90px 0 80px;
 }
 
 #container-maki .carte-maki img {
@@ -251,17 +260,19 @@ header ul li a:hover {
   line-height: 28px;
 }
 
+.carte-maki {
+  padding-bottom: 25px;
+}
 /* HOVER */
 
 .carte-maki:hover {
   background-color: white;
   border-radius: 20px;
-  padding: 0 0 40px 0;
   box-shadow: 0px 4px 32px 5px rgba(0, 0, 0, 0.05);
 }
 
-.carte-maki:last-child:hover {
-  padding-bottom: 67px;
+#container-button .button-orange:hover {
+  cursor: pointer;
 }
 
 /* SECTION CHEF */
