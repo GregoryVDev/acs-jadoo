@@ -54,8 +54,12 @@ label {
   color: white;
   font: 13px "poppins-regular";
   font-weight: 400;
-  /* box-shadow: 0px 20px 35px 5px rgba(241, 165, 1, 0.15); */
+  box-shadow: 0px 20px 35px 5px rgba(241, 165, 1, 0.15);
   cursor: pointer;
+}
+
+section {
+  position: relative;
 }
 
 /* HEADER */
@@ -94,7 +98,7 @@ header ul li a:hover {
 #picture {
   background: url("../assets/illustration_principale.jpg") no-repeat;
   background-size: cover;
-  height: 84vh;
+  height: auto;
   padding: 100px 0 100px 150px;
 }
 
@@ -168,19 +172,27 @@ header ul li a:hover {
 }
 
 #news .button-orange {
-  width: 10%;
   margin: auto;
 }
 /* CONTAINER NOUVEAUTES */
 
 #container-nouveautes {
+  width: 950px;
+  margin: auto;
+  margin-top: 50px;
   display: flex;
-  justify-content: center;
-  text-align: center;
+  justify-content: space-around;
+  /* border: 3px solid green; */
 }
 
-#news .carte img {
+.carte {
+  /* border: 3px solid black; */
+  width: 30%;
+}
+
+.carte img {
   border-radius: 25px 25px 0 0;
+  width: 280px;
 }
 
 #news figure {
@@ -194,7 +206,7 @@ header ul li a:hover {
   font: 18px "poppins-regular";
   font-weight: 400;
   color: #5e6282;
-  width: 87%;
+  width: 100%;
   background-color: #fff;
   padding: 20px;
   border-radius: 0 0 25px 25px;
@@ -210,7 +222,7 @@ header ul li a:hover {
 #container-nouveautes article:first-child,
 #container-nouveautes article:nth-last-child(2),
 #container-nouveautes article:last-child {
-  width: 17%;
+  width: 30%;
 }
 
 /* CONTAINER MAKI */
@@ -223,10 +235,10 @@ header ul li a:hover {
 }
 
 #container-maki {
+  width: 1080px;
+  margin: 90px auto;
   display: flex;
   justify-content: center;
-  text-align: center;
-  margin: 90px 0 80px;
 }
 
 #container-maki .carte-maki img {
@@ -237,7 +249,7 @@ header ul li a:hover {
 #container-maki article:nth-last-child(2),
 #container-maki article:nth-last-child(3),
 #container-maki article:last-child {
-  width: 14%;
+  width: 30%;
 }
 
 #container-maki h3 {
@@ -272,10 +284,9 @@ header ul li a:hover {
 #chef {
   background: url("../assets/illustration_chef.jpg") no-repeat;
   background-size: cover;
-  height: 155vh;
+  height: auto;
   margin: 100px 0 0;
-  padding: 100px 0 100px 150px;
-  position: relative;
+  padding: 100px 0 480px 150px;
 }
 
 #chef #detail {
@@ -320,18 +331,29 @@ header ul li a:hover {
   color: #fff;
 }
 
-/* #container-images figure {
-  border: 3px solid black;
-  display: inline-block;
-} */
+/* CONTAINER-IMAGES */
+
+#container-images {
+  display: flex;
+  position: absolute;
+  left: 0;
+  bottom: -365px;
+  z-index: 1;
+}
 
 /* SECTION COMMANDE */
 
 #commande {
   background: url("../assets/illustration_commander.jpg") no-repeat;
+  background-size: cover;
   height: auto;
   display: flex;
   flex-direction: column;
+  padding: 460px 0 100px 150px;
+}
+
+#commande article {
+  width: 25%;
 }
 
 #commande figure img {
@@ -341,10 +363,24 @@ header ul li a:hover {
 
 #commande h2 {
   color: #df6951;
+  font-size: 50px;
+  font-weight: 400;
+  margin-top: 10px;
 }
 
 #commande span {
   color: #14183e;
+}
+
+#container-informations {
+  display: flex;
+  flex-direction: column;
+}
+
+#container-informations figure {
+  display: flex;
+  margin-top: 25px;
+  width: 90%;
 }
 
 #commande figcaption h4 {
@@ -352,12 +388,19 @@ header ul li a:hover {
   font: 16px "poppins-bold";
   font-weight: 400;
   text-transform: none;
+  margin: 0 0 0 20px;
 }
 
 #commande figcaption p {
   font: 16px "poppins-regular";
   color: #3e3f43;
   font-weight: 400;
+  margin: 0 0 0 20px;
+  padding-top: 10px;
+}
+
+#commande .button-orange {
+  margin-top: 50px;
 }
 
 /* SECTION CONTACT */
