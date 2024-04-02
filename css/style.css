@@ -72,7 +72,7 @@ header {
   background-color: white;
   position: sticky;
   top: 0px;
-  z-index: 1;
+  z-index: 2;
 }
 
 header nav {
@@ -404,6 +404,11 @@ header ul li a:hover {
 }
 
 /* SECTION CONTACT */
+
+#contact {
+  border: 3px solid black;
+  text-align: center;
+}
 
 #contact h2 {
   font: 50px "volkhov-regular";
