@@ -49,12 +49,12 @@ label {
   color: #000;
 }
 
-.button {
+.button-orange {
   background-color: orange;
   color: white;
   font: 13px "poppins-regular";
   font-weight: 400;
-  box-shadow: 0px 20px 35px 5px rgba(241, 165, 1, 0.15);
+  /* box-shadow: 0px 20px 35px 5px rgba(241, 165, 1, 0.15); */
   cursor: pointer;
 }
 
@@ -84,8 +84,6 @@ header li a {
   font-family: "poppins-regular", sans-serif;
   color: black;
 }
-
-/* HOVER */
 
 header ul li a:hover {
   text-decoration: underline;
@@ -146,6 +144,8 @@ header ul li a:hover {
 #news {
   background: url("../assets/decor_1.svg") no-repeat;
   background-position: top 25px right 35px;
+  display: flex;
+  flex-direction: column;
 }
 
 #news h4 {
@@ -168,8 +168,8 @@ header ul li a:hover {
 }
 
 #news .button-orange {
+  width: 10%;
   margin: auto;
-  display: block;
 }
 /* CONTAINER NOUVEAUTES */
 
@@ -200,8 +200,12 @@ header ul li a:hover {
   border-radius: 0 0 25px 25px;
   line-height: 28px;
   box-shadow: 0px 4px 32px 5px rgba(0, 0, 0, 0.05);
-  z-index: 3;
 }
+
+/* #news #container-nouveautes article:last-child {
+  background: url("../assets/decoration_filet.svg") no-repeat;
+  background-position: bottom 80px right 0px;
+} */
 
 #container-nouveautes article:first-child,
 #container-nouveautes article:nth-last-child(2),
@@ -267,11 +271,25 @@ header ul li a:hover {
 
 #chef {
   background: url("../assets/illustration_chef.jpg") no-repeat;
-  transition: 2s 0.5s;
   background-size: cover;
-  height: 100vh;
+  height: 155vh;
   margin: 100px 0 0;
   padding: 100px 0 100px 150px;
+  position: relative;
+}
+
+#chef #detail {
+  margin-top: 100px;
+  width: 50%;
+}
+
+#chef #detail h2 {
+  width: 70%;
+}
+
+#chef #detail h5 {
+  line-height: 30px;
+  width: 50%;
 }
 
 #chef #video {
@@ -291,20 +309,35 @@ header ul li a:hover {
   right: 192px;
 }
 
+#video-lecture:hover {
+  cursor: pointer;
+  opacity: 0.97;
+}
+
 #detail h5 {
   font: 16px "poppins-regular";
   font-weight: 700;
   color: #fff;
 }
 
-/* HOVER */
-
-#video-lecture:hover {
-  cursor: pointer;
-  opacity: 0.97;
-}
+/* #container-images figure {
+  border: 3px solid black;
+  display: inline-block;
+} */
 
 /* SECTION COMMANDE */
+
+#commande {
+  background: url("../assets/illustration_commander.jpg") no-repeat;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#commande figure img {
+  width: 60px;
+  height: 60px;
+}
 
 #commande h2 {
   color: #df6951;
