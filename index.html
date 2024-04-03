@@ -12,7 +12,7 @@
 
 <body>
     <header>
-        <div class="logo">
+        <div class="logos">
             <img src="./assets/logo_jadoo_1.svg" alt="Sushi">
             <img src="./assets/logo_jadoo_2.svg" alt="Jadoo">
         </div>
@@ -165,19 +165,20 @@
 
         <section id="contact">
             <h4>Prendre rendez-vous</h4>
-            <h2>Contactez-nous pour réserver au restaurant</h2>
+            <h2>Contactez-nous <br> pour réserver au restaurant</h2>
             <div class="container-form">
                 <div class="contact-left">
                     <h4>Formulaire de contact</h4>
-                    <h5>Remplissez le formulaire ci-dessous pour nous contacter</h5>
+                    <h5>Remplissez le formulaire ci-dessous <br> pour nous contacter</h5>
                     <form action="form.php" method="post">
-                        <div class="nom">
+                        <div class="container-names"></div>
+                        <div class="name">
                             <label for="nom">Nom</label>
                             <input type="text" id="nom" name="nom" placeholder="Nom" required>
-                        </div>
-                        <div class="prenom">
-                            <label for="prenom">Prénom</label>
-                            <input type="text" id="prenom" name="prenom" placeholder="Prénom" required>
+                            <div class="prenom">
+                                <label for="prenom">Prénom</label>
+                                <input type="text" id="prenom" name="prenom" placeholder="Prénom" required>
+                            </div>
                         </div>
                         <div>
                             <label for="email">Adresse email</label>
@@ -190,7 +191,7 @@
                     </form>
                     <button id="submit" type="submit">Envoyer</button>
                 </div>
-                <div class="contact-right"><img src="./assets/illustration_formulaire.jpg" alt=""></div>
+                <div class="contact-right"></div>
             </div>
 
             </div>
