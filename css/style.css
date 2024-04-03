@@ -50,12 +50,14 @@ input {
   margin-bottom: 30px;
   font: 13px "poppins-regular";
   font-weight: 500;
+  line-height: 1.6; /* Ajustez cette valeur selon vos besoins */
 }
 
 ::placeholder {
   font: 13px "poppins-regular";
   font-weight: 400;
   color: #989898;
+  padding: 10px 0;
 }
 
 .button-orange {
