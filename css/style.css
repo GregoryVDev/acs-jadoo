@@ -372,15 +372,10 @@ header ul li a:hover {
   color: #14183e;
 }
 
-#container-informations {
-  display: flex;
-  flex-direction: column;
-}
-
 #container-informations figure {
   display: flex;
   margin-top: 25px;
-  width: 90%;
+  width: auto;
 }
 
 #commande figcaption h4 {
@@ -389,6 +384,7 @@ header ul li a:hover {
   font-weight: 400;
   text-transform: none;
   margin: 0 0 0 20px;
+  padding-top: 2px;
 }
 
 #commande figcaption p {
@@ -397,6 +393,10 @@ header ul li a:hover {
   font-weight: 400;
   margin: 0 0 0 20px;
   padding-top: 10px;
+}
+
+#commande .livraison h4 {
+  padding-top: 8px;
 }
 
 #commande .button-orange {
@@ -419,66 +419,164 @@ header ul li a:hover {
   color: #14183e;
 }
 
+.container-form {
+  display: flex;
+}
+
 #submit {
   font: 13px "poppins-regular";
   font-weight: 400;
   color: black;
 }
 
-#formulaire h4 {
+.container-form h4 {
   font: 18px "poppins-regular";
   font-weight: 700;
   text-transform: none;
 }
 
-#formulaire h5 {
+.container-form h5 {
   font: 16px "poppins-regular";
   font-weight: 700;
   color: #8d8d8d;
 }
 
+.contact-left {
+}
+
+.contact-right {
+  display: flex;
+}
+
+.contact-right img {
+  width: 50%;
+  height: 100%;
+}
+
 /* FOOTER */
 
-footer #logojadoo p {
-  font: 16px "poppins-regular";
+footer {
+  background: #f3f3f3;
+  padding: 70px 15% 20px;
+  height: auto;
+}
+
+.container-footer {
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+
+.footer-logos {
+  width: 40%;
+}
+
+footer #logojadoo {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+footer #logojadoo img {
+  height: 50px;
+}
+
+footer #jadoo p {
+  font: 18px "poppins-regular";
   font-weight: 400;
-  color: #000;
+  color: rgb(94, 98, 130);
+  width: 60%;
+  line-height: 26px;
+}
+
+.footer-support {
+  width: 33%;
+}
+
+footer #support {
+  display: flex;
+  gap: 50px;
 }
 
 footer h4 {
-  font: 16px "poppins-bold";
-  font-weight: 400;
+  font: 21px "poppins-bold";
+  font-weight: 500;
   color: #000;
   text-transform: none;
+  margin-bottom: 25px;
+}
+
+.restaurant {
+  padding: 0 0 0 20px;
 }
 
 footer li {
   list-style: none;
+  margin-bottom: 10px;
 }
 
-footer a {
-  font: 16px "poppins-regular";
-  font-weight: 400;
-  color: #000;
+footer li a {
+  font: 18px "poppins-regular";
+  font-weight: 500;
+  color: #5e6282;
+  line-height: 26px;
   text-decoration: none;
 }
 
+footer li a:hover {
+  text-decoration: underline;
+}
+
+.footer-applications {
+  width: 33%;
+  text-align: center;
+  height: auto;
+}
+
+.logo-ubereats img {
+  height: 30px;
+  margin-bottom: 10px;
+}
+
 #applications p {
-  font: 16px "poppins-regular";
-  font-weight: 400;
-  color: #000;
+  font: 18px "poppins-regular";
+  font-weight: 500;
+  color: #5e6282;
+  line-height: 26px;
+  margin-bottom: 25px;
 }
 
-footer button.google {
-  text-transform: uppercase;
+.logos-applications {
+  margin-left: 80px;
 }
 
-footer button.apple {
+footer button {
+  background-color: #000;
+  color: #fff;
   text-transform: uppercase;
+  border-radius: 50px;
+  border: transparent;
+  padding: 10px 15px;
+  font-size: 10px;
+}
+
+footer button img {
+  margin: 0 10px 0 0;
 }
 
 footer p {
   font: 14px "poppins-regular";
-  font-weight: 400;
-  color: #000;
+  font-weight: 500;
+  color: #5e6282;
+  line-height: 21px;
+}
+
+button > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+footer > p {
+  text-align: center;
+  margin-top: 50px;
 }

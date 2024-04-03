@@ -138,7 +138,7 @@
                             <img src="./assets/logo_uberEats.png" alt="Logo UberEats" title="UberEats">
                             <figcaption>
                                 <h4>UberEats</h4>
-                                <p>Commandez tous vos plats depuis UberEats</p>
+                                <p>Commandez tous vos plats depuis <br>UberEats</p>
                             </figcaption>
                         </figure>
                     </a>
@@ -147,11 +147,11 @@
                             <img src="./assets/logo_jadoo_1.svg" alt="Logo Jadoo" title="Jadoo">
                             <figcaption>
                                 <h4>Jadoo.fr</h4>
-                                <p>Ou commandez en ligne sur le site officiel de Jadoo</p>
+                                <p>Ou commandez en ligne sur le site <br>officiel de Jadoo</p>
                             </figcaption>
                         </figure>
                     </a>
-                    <figure>
+                    <figure class="livraison">
                         <img src="./assets/logo_transport.png" alt="Logo transport" title="Livraison rapide">
                         <figcaption>
                             <h4>Livraison ultra rapide</h4>
@@ -166,10 +166,10 @@
         <section id="contact">
             <h4>Prendre rendez-vous</h4>
             <h2>Contactez-nous pour réserver au restaurant</h2>
-            <div id="formulaire">
-                <h4>Formulaire de contact</h4>
-                <h5>Remplissez le formulaire ci-dessous pour nous contacter</h5>
+            <div class="container-form">
                 <div class="contact-left">
+                    <h4>Formulaire de contact</h4>
+                    <h5>Remplissez le formulaire ci-dessous pour nous contacter</h5>
                     <form action="form.php" method="post">
                         <div class="nom">
                             <label for="nom">Nom</label>
@@ -190,32 +190,54 @@
                     </form>
                     <button id="submit" type="submit">Envoyer</button>
                 </div>
-                <div id="image">
-                    <img src="./assets/illustration_formulaire.jpg" alt="Illustration formulaire">
-                </div>
+                <div class="contact-right"><img src="./assets/illustration_formulaire.jpg" alt=""></div>
+            </div>
+
             </div>
         </section>
     </main>
     <footer>
-        <div id="jadoo">
-            <div id="logojadoo">
-                <p>Un voyage gastronomique entre le Japon et la France</p>
+        <div class="container-footer">
+            <div class="footer-logos">
+                <div id="logojadoo">
+                    <img src="./assets/logo_jadoo_1.svg" alt="Sushi">
+                    <img src="./assets/logo_jadoo_2.svg" alt="Jadoo">
+                </div>
+                <div id="jadoo">
+                    <p>Un voyage gastronomique entre le Japon et la France</p>
+                </div>
             </div>
+            <div class="footer-support">
+                <div id="support">
+                    <div class="restaurant">
+                        <h4>Restaurant</h4>
+                        <li><a href="#">Nouveautés</a></li>
+                        <li><a href="#">Découvrir</a></li>
+                        <li><a href="#">Commander</a></li>
+                    </div>
+                    <div class="contact-support">
+                        <h4>Contact</h4>
+                        <li><a href="#">Prendre RDV</a></li>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-applications">
+                <div id="applications">
+                    <div class="logo-ubereats">
+                        <img src="./assets/logo_uberEats_2.svg" alt="Logo UberEats" title="UberEats">
+                    </div>
+                    <p>Téléchargez UberEats</p>
+                    <div class="logos-applications">
+                        <button class="google"><img src="./assets/logo_google_play.svg" alt="Google Play logo"
+                                title="Google Play"><span>Google Play</span></button>
+                        <button class="apple"><img src="./assets/logo_apple.svg" alt="Apple logo"
+                                title="Apple Store"><span>Apple Store</span></button>
+                    </div>
+                </div>
+            </div>
+
         </div>
-        <div id="support">
-            <h4>Restaurant</h4>
-            <li><a href="#">Nouveautés</a></li>
-            <li><a href="#">Découvrir</a></li>
-            <li><a href="#">Commander</a></li>
-            <h4>Contact</h4>
-            <li><a href="#">Prendre RDV</a></li>
-        </div>
-        <div id="applications">
-            <img src="" alt="">
-            <p>Téléchargez UberEats</p>
-            <button class="google">Google Play</button>
-            <button class="apple">Apple Store</button>
-        </div>
+
         <p>Tous droits réservés @jadoo.com</p>
 
     </footer>
