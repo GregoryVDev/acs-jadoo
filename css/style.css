@@ -41,17 +41,21 @@ label {
   font: 16px "poppins-regular";
   font-weight: 400;
   color: #000;
+  margin-bottom: 5px;
 }
 
 input {
   border: none;
   border-bottom: 1px solid #e2e4e5;
+  margin-bottom: 30px;
+  font: 13px "poppins-regular";
+  font-weight: 500;
 }
 
 ::placeholder {
   font: 13px "poppins-regular";
   font-weight: 400;
-  color: #000;
+  color: #989898;
 }
 
 .button-orange {
@@ -455,10 +459,12 @@ header ul li a:hover {
   color: #8d8d8d;
 }
 
+/* CONTACT LEFT */
+
 .contact-left {
   width: 50%;
   text-align: justify;
-  padding: 30px 0 30px 50px;
+  padding: 80px 50px 50px 50px;
   border: 3px solid green;
 }
 
@@ -466,12 +472,72 @@ header ul li a:hover {
   font: 18px "poppins-regular";
   font-weight: 600;
   color: #000;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .contact-left h5 {
   margin-bottom: 20px;
 }
+
+.container-names {
+  display: flex;
+  justify-content: space-between;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+.name input {
+  padding-right: 10px;
+  margin-top: 8px;
+}
+
+.prenom {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.prenom input {
+  margin-top: 8px;
+}
+
+.email {
+  display: flex;
+  flex-direction: column;
+}
+
+.email input {
+  margin-top: 8px;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+}
+
+.message input {
+  margin-top: 8px;
+}
+
+#submit {
+  background-color: #007aff;
+  color: #fff;
+  border: transparent;
+  border-radius: 5px;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+#submit img {
+  margin-right: 10px;
+}
+
+/* CONTACT RIGHT */
 
 .contact-right {
   display: flex;
@@ -566,6 +632,11 @@ footer li a:hover {
   margin-bottom: 10px;
 }
 
+#applications {
+  display: flex;
+  flex-direction: column;
+}
+
 #applications p {
   font: 18px "poppins-regular";
   font-weight: 500;
@@ -575,7 +646,9 @@ footer li a:hover {
 }
 
 .logos-applications {
-  margin-left: 80px;
+  display: flex;
+  gap: 5px;
+  margin: auto;
 }
 
 footer button {
@@ -586,6 +659,8 @@ footer button {
   border: transparent;
   padding: 10px 15px;
   font-size: 10px;
+  display: flex;
+  align-items: center;
 }
 
 footer button img {
@@ -597,11 +672,6 @@ footer p {
   font-weight: 500;
   color: #5e6282;
   line-height: 21px;
-}
-
-button > * {
-  display: inline-block;
-  vertical-align: middle;
 }
 
 footer > p {
