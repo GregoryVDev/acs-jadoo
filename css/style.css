@@ -202,6 +202,8 @@ header ul li a:hover {
   margin-top: 50px;
   display: flex;
   justify-content: space-around;
+  background: url("../assets/decoration_filet.svg") no-repeat;
+  background-position-x: 100%;
   /* border: 3px solid green; */
 }
 
@@ -233,11 +235,6 @@ header ul li a:hover {
   line-height: 28px;
   box-shadow: 0px 4px 32px 5px rgba(0, 0, 0, 0.05);
 }
-
-/* #news #container-nouveautes article:last-child {
-  background: url("../assets/decoration_filet.svg") no-repeat;
-  background-position: bottom 80px right 0px;
-} */
 
 #container-nouveautes article:first-child,
 #container-nouveautes article:nth-last-child(2),
@@ -553,6 +550,10 @@ form {
   font-size: 18px;
   font-weight: 400;
   margin-top: 20px;
+}
+
+#submit:hover {
+  opacity: 0.9;
 }
 
 #submit img {
