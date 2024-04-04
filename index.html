@@ -13,15 +13,20 @@
 <body>
     <header>
         <div class="logos">
-            <img src="./assets/logo_jadoo_1.svg" alt="Maki">
-            <img src="./assets/logo_jadoo_2.svg" alt="Jadoo">
+            <div class="maki-anim">
+                <img src="./assets/logo_jadoo_1.svg" alt="Maki">
+            </div>
+            <div class="anim-jadoo">
+                <img src="./assets/logo_jadoo_2.svg" alt="Jadoo">
+            </div>
+
         </div>
         <nav>
             <ul>
-                <li><a href="#">Les nouveautés</a></li>
-                <li><a href="#">Découvrir</a></li>
-                <li><a href="#">Commander</a></li>
-                <li><a href="#">Contactez-nous</a></li>
+                <li><a href="#news">Les nouveautés</a></li>
+                <li><a href="#chef">Découvrir</a></li>
+                <li><a href="#commande">Commander</a></li>
+                <li><a href="#contact">Contactez-nous</a></li>
             </ul>
         </nav>
     </header>
@@ -31,9 +36,9 @@
             <article id="description">
                 <h3>Un voyage culinaire gourmet et gourmand.</h3>
                 <h1>Bienvenue<br> au restaurant<br> Jadoo</h1>
-                <h5>Jadoo vous accueille dans son ambiance zen et épurée,<br> idéale pour découvrir ou redécouvrir la
+                <p>Jadoo vous accueille dans son ambiance zen et épurée,<br> idéale pour découvrir ou redécouvrir la
                     cuisine<br>
-                    gastronomique du Chef Junichi IIDA.</h5>
+                    gastronomique du Chef Junichi IIDA.</p>
                 <button class="button-orange">Découvrir la carte</button>
             </article>
         </section>
@@ -144,7 +149,9 @@
                     </a>
                     <a href="#">
                         <figure>
-                            <img src="./assets/logo_jadoo_1.svg" alt="Logo Jadoo" title="Jadoo">
+                            <div class="anim-maki">
+                                <img src="./assets/logo_jadoo_1.svg" alt="Logo Jadoo" title="Jadoo">
+                            </div>
                             <figcaption>
                                 <h4>Jadoo.fr</h4>
                                 <p>Ou commandez en ligne sur le site <br>officiel de Jadoo</p>
@@ -152,7 +159,10 @@
                         </figure>
                     </a>
                     <figure class="livraison">
-                        <img src="./assets/logo_transport.png" alt="Logo transport" title="Livraison rapide">
+                        <div class="anim-livraison">
+                            <img id="scooter" src="./assets/logo_transport.png" alt="Logo transport">
+                            <audio controls src="./assets/scooter.wav" id="audio"></audio>
+                        </div>
                         <figcaption>
                             <h4>Livraison ultra rapide</h4>
                             <p>Soyez livrez en 20 minutes maximum</p>
@@ -204,7 +214,9 @@
         <div class="container-footer">
             <div class="footer-logos">
                 <div id="logojadoo">
-                    <img src="./assets/logo_jadoo_1.svg" alt="Sushi">
+                    <div class="anim-maki">
+                        <img src="./assets/logo_jadoo_1.svg" alt="Maki">
+                    </div>
                     <img src="./assets/logo_jadoo_2.svg" alt="Jadoo">
                 </div>
                 <div id="jadoo">
@@ -243,8 +255,8 @@
         </div>
 
         <p>Tous droits réservés @jadoo.com</p>
-
     </footer>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

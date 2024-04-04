@@ -142,7 +142,7 @@ header ul li a:hover {
   margin-top: 10px;
 }
 
-#description h5 {
+#description p {
   font: 16px "poppins-regular";
   color: #bfc0cd;
   font-weight: 500;
@@ -215,7 +215,7 @@ header ul li a:hover {
 
 .carte img {
   border-radius: 25px 25px 0 0;
-  width: 280px;
+  width: 100%;
 }
 
 #news figure {
@@ -463,6 +463,7 @@ form {
   font: 13px "poppins-regular";
   font-weight: 400;
   color: black;
+  box-shadow: 0px 20px 35px 5px rgba(11, 54, 59, 0.15);
 }
 
 .container-form h4 {
@@ -693,6 +694,10 @@ footer button {
   align-items: center;
 }
 
+footer button:hover {
+  opacity: 0.9;
+}
+
 footer button img {
   margin: 0 10px 0 0;
 }
@@ -707,4 +712,78 @@ footer p {
 footer > p {
   text-align: center;
   margin-top: 50px;
+}
+
+/* ANIMATION JADOO LOGO */
+
+.maki-anim:hover {
+  animation: secousse 0.5s ease;
+}
+
+@keyframes secousse {
+  20% {
+    transform: rotate(10deg);
+  }
+  40% {
+    transform: rotate(-15deg);
+  }
+  60% {
+    transform: rotate(10deg);
+  }
+  80% {
+    transform: rotate(-10deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.anim-maki:hover {
+  animation: bounce 0.5s ease infinite alternate;
+}
+
+.anim-jadoo:hover {
+  animation: rotate 0.5s ease;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+/* ANIM LOGO LIVRAISON */
+
+.anim-livraison:hover {
+  animation: roule 5s ease-in-out;
+}
+
+@keyframes roule {
+  30% {
+  }
+  50% {
+    translate: 10px 50px;
+    transform: scale(5);
+  }
+  70% {
+    translate: 3000px;
+  }
+  40% {
+    transform: rotate(5turn);
+  }
+  30% {
+    transform: rotate(2turn);
+  }
 }
