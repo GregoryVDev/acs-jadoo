@@ -1,19 +1,26 @@
-// Sélectionner l'élément du scooter
+// Sélection de l'élément HTML avec l'ID "scooter"
 const scooter = document.getElementById("scooter");
 
-// Sélectionner l'élément audio
-const audio = document.getElementById("audio");
+// Création d'un nouvel élément audio avec le fichier audio spécifié
+const bruitScooter = new Audio("https://lasonotheque.org/UPLOAD/mp3/0603.mp3");
 
-// Ajouter un écouteur d'événements pour le survol de la souris sur l'image du scooter
+// Ajout d'un écouteur d'événements pour le survol de la souris sur l'élément "scooter"
 scooter.addEventListener("mouseenter", () => {
-  // Jouer l'audio lorsque la souris survole l'image du scooter
-  audio.play();
+  // Lecture du fichier audio lorsque la souris survole l'élément "scooter"
+  bruitScooter.play();
 });
 
-// Optionnel : Mettre en pause l'audio lorsque la souris quitte l'image du scooter
-scooter.addEventListener("mouseleave", () => {
-  // Mettre en pause l'audio lorsque la souris quitte l'image du scooter
-  audio.pause();
-  // Optionnellement, vous pouvez également réinitialiser l'audio au début
-  audio.currentTime = 0;
+// Sélection de l'élément HTML avec l'ID "scooter" (peut-être une erreur, devrait être un autre élément, ex: "rotate")
+const rotate = document.getElementById("scooter");
+
+// Ajout d'un écouteur d'événements pour le survol de la souris sur l'élément "rotate"
+rotate.addEventListener("mouseenter", function () {
+  // Ajout de la classe "animated" à l'élément "rotate" lors du survol de la souris
+  this.classList.add("animated");
+});
+
+// Ajout d'un écouteur d'événements pour la fin de l'animation sur l'élément "rotate"
+rotate.addEventListener("animationend", function () {
+  // Suppression de la classe "animated" de l'élément "rotate" lorsque l'animation se termine
+  this.classList.remove("animated");
 });

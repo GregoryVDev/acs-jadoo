@@ -716,7 +716,7 @@ footer > p {
 
 /* ANIMATION JADOO LOGO */
 
-.maki-anim:hover {
+#maki-anim:hover {
   animation: secousse 0.5s ease;
 }
 
@@ -738,11 +738,11 @@ footer > p {
   }
 }
 
-.anim-maki:hover {
+#anim-maki:hover {
   animation: bounce 0.5s ease infinite alternate;
 }
 
-.anim-jadoo:hover {
+#anim-jadoo:hover {
   animation: rotate 0.5s ease;
 }
 
@@ -766,24 +766,23 @@ footer > p {
 
 /* ANIM LOGO LIVRAISON */
 
-.anim-livraison:hover {
+.animated {
   animation: roule 5s ease-in-out;
 }
 
 @keyframes roule {
-  30% {
+  20% {
+    transform: rotate(2turn);
   }
-  50% {
+  35% {
     translate: 10px 50px;
-    transform: scale(5);
-  }
-  70% {
-    translate: 3000px;
-  }
-  40% {
     transform: rotate(5turn);
   }
-  30% {
-    transform: rotate(2turn);
+  50% {
+    transform: scale(3);
+  }
+  60% {
+    translate: 2160px;
+    transform: rotate(3turn);
   }
 }

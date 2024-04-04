@@ -13,13 +13,8 @@
 <body>
     <header>
         <div class="logos">
-            <div class="maki-anim">
-                <img src="./assets/logo_jadoo_1.svg" alt="Maki">
-            </div>
-            <div class="anim-jadoo">
-                <img src="./assets/logo_jadoo_2.svg" alt="Jadoo">
-            </div>
-
+            <img src="./assets/logo_jadoo_1.svg" alt="Maki" id="maki-anim">
+            <img src="./assets/logo_jadoo_2.svg" alt="Jadoo" id="anim-jadoo">
         </div>
         <nav>
             <ul>
@@ -149,9 +144,7 @@
                     </a>
                     <a href="#">
                         <figure>
-                            <div class="anim-maki">
-                                <img src="./assets/logo_jadoo_1.svg" alt="Logo Jadoo" title="Jadoo">
-                            </div>
+                            <img src="./assets/logo_jadoo_1.svg" alt="Logo Jadoo" title="Jadoo" id="anim-maki">
                             <figcaption>
                                 <h4>Jadoo.fr</h4>
                                 <p>Ou commandez en ligne sur le site <br>officiel de Jadoo</p>
@@ -159,10 +152,10 @@
                         </figure>
                     </a>
                     <figure class="livraison">
-                        <div class="anim-livraison">
-                            <img id="scooter" src="./assets/logo_transport.png" alt="Logo transport">
-                            <audio controls src="./assets/scooter.wav" id="audio"></audio>
+                        <div id="scooter">
+                            <img src="./assets/logo_transport.png" alt="Logo transport">
                         </div>
+
                         <figcaption>
                             <h4>Livraison ultra rapide</h4>
                             <p>Soyez livrez en 20 minutes maximum</p>
@@ -258,5 +251,6 @@
     </footer>
     <script src="./js/script.js"></script>
 </body>
+
 
 </html>
