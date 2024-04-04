@@ -89,6 +89,7 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 70px;
+  width: 100%;
   background-color: white;
   position: sticky;
   top: 0px;
@@ -313,6 +314,11 @@ header ul li a:hover {
 
 #chef #detail h2 {
   width: 70%;
+}
+
+#chef #detail h2 {
+  background: url("../assets/souligne_rose.svg") no-repeat;
+  background-position: -5px 18%;
 }
 
 #chef #detail h5 {
