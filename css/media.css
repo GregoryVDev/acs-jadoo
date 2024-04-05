@@ -1,0 +1,30 @@
+/* PC 1024px */
+
+@media all and (max-width: 1024px) {
+  nav img {
+    display: block;
+  }
+
+  .active #burger:before {
+    content: "\2715";
+  }
+
+  nav ul {
+    position: fixed;
+    left: -100%;
+    top: 8%;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    transition: 0.25s;
+    background-color: skyblue;
+  }
+
+  nav li {
+    padding: 15px;
+  }
+
+  nav.active ul {
+    left: 0;
+  }
+}

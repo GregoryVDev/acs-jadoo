@@ -1,3 +1,17 @@
+// NAVBAR BURGER
+
+burger.addEventListener("click", () => {
+  nav.classList.toggle("active");
+});
+
+const menuBurger = document.getElementById("burger");
+
+menuBurger.addEventListener("click", () => {
+  alert();
+});
+
+// SOUND BIKE
+
 // Sélection de l'élément HTML avec l'ID "scooter"
 const scooter = document.getElementById("scooter");
 
