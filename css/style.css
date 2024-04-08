@@ -248,9 +248,7 @@ header ul li a:hover {
   box-shadow: 0px 4px 32px 5px rgba(0, 0, 0, 0.05);
 }
 
-#container-nouveautes article:first-child,
-#container-nouveautes article:nth-last-child(2),
-#container-nouveautes article:last-child {
+#container-nouveautes article {
   width: 280px;
 }
 
@@ -274,9 +272,29 @@ article.carte-maki figure img:first-child {
   margin-bottom: 50px;
 }
 
+#container-maki .carte-maki img {
+  margin-bottom: 50px;
+}
+
 #container-maki article {
   width: 30%;
   position: relative;
+}
+
+#container-maki article:before {
+  content: "";
+  position: absolute;
+}
+
+#container-maki article:after {
+  content: "";
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: -20px;
+  left: -20px;
+  transform: rotate(0deg);
+  transition: 0.5s;
 }
 
 #square,
@@ -289,7 +307,7 @@ article.carte-maki figure img:first-child {
   height: 100px;
   position: absolute;
   left: -40px;
-  bottom: -50px;
+  bottom: -80px;
   z-index: -5;
 }
 
