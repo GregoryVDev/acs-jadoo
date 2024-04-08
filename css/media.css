@@ -3,6 +3,9 @@
 @media all and (max-width: 1024px) {
   nav img {
     display: block;
+    position: absolute;
+    right: 20px;
+    top: 25px;
   }
 
   .active #burger:before {
@@ -12,12 +15,16 @@
   nav ul {
     position: fixed;
     left: -100%;
-    top: 8%;
+    top: 4.4rem;
     flex-direction: column;
     text-align: center;
     width: 100%;
     transition: 0.25s;
     background-color: skyblue;
+  }
+
+  nav #burger img {
+    border: 3px solid green;
   }
 
   nav li {
