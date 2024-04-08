@@ -443,7 +443,7 @@ header ul li a:hover {
 }
 
 #commande article {
-  width: 25%;
+  width: 50%;
 }
 
 #commande figure img {
@@ -456,6 +456,7 @@ header ul li a:hover {
   font-size: 50px;
   font-weight: 400;
   margin-top: 10px;
+  width: 45%;
 }
 
 #commande span {
@@ -677,7 +678,6 @@ footer #jadoo p {
   font: 18px "poppins-regular";
   font-weight: 400;
   color: rgb(94, 98, 130);
-  width: 60%;
   line-height: 26px;
 }
 
@@ -805,7 +805,7 @@ footer > p {
   }
 }
 
-#anim-maki:hover {
+.anim-maki:hover {
   animation: bounce 0.5s ease infinite alternate;
 }
 

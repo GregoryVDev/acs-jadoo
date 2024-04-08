@@ -1,6 +1,15 @@
 /* PC 1024px */
 
 @media all and (max-width: 1024px) {
+  /* GENERAL */
+
+  h1,
+  h2 {
+    font-size: 74px;
+  }
+
+  /* NAVBAR BURGER */
+
   nav img {
     display: block;
   }
@@ -9,15 +18,23 @@
     content: "\2715";
   }
 
+  .active #burger img {
+    display: none;
+  }
+
   nav ul {
     position: fixed;
     left: -100%;
-    top: 8%;
+    top: 7%;
     flex-direction: column;
     text-align: center;
     width: 100%;
     transition: 0.25s;
-    background-color: skyblue;
+    background: #faf9f9;
+  }
+
+  nav ul li:hover {
+    background: #fff;
   }
 
   nav li {
@@ -26,5 +43,231 @@
 
   nav.active ul {
     left: 0;
+    display: flex;
+  }
+
+  /* SECTION PICTURE */
+
+  #picture {
+    padding: 50px;
+  }
+
+  #picture h3 {
+    width: auto;
+  }
+
+  #picture #description {
+    width: auto;
+    margin: 0;
+  }
+
+  /* SECTION NEWS */
+
+  #news h2 {
+    font-size: 40px;
+  }
+
+  #news #container-nouveautes {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    background-position: right 40% bottom 20%;
+  }
+  #news #container-nouveautes .carte {
+    width: 33%;
+  }
+
+  #container-nouveautes .carte img {
+    width: 280px;
+    height: 280px;
+  }
+
+  #container-nouveautes figure {
+    width: 280px;
+  }
+
+  /* SECTION CHEF */
+
+  #chef {
+    background-position: 50%;
+    padding: 80px 50px 426px 50px;
+    width: auto;
+    height: auto;
+    margin: 100px 0 0;
+  }
+
+  #chef #detail {
+    width: auto;
+  }
+
+  #detail h5 {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  /* SECTION COMMANDE */
+
+  #commande {
+    background-position: 45%;
+    padding: 480px 50px 80px;
+    width: auto;
+  }
+
+  #commande article {
+    width: auto;
+  }
+
+  #commande h2 {
+    font-size: 40px;
+  }
+
+  #container-informations {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  #commande figcaption h4 {
+    font-size: 14px;
+  }
+
+  #commande figcaption p {
+    font-size: 14px;
+  }
+
+  /* FORMULAIRE */
+
+  .container-form {
+    width: 90%;
+  }
+
+  .contact-left {
+    padding: 50px 50px 0 50px;
+  }
+
+  .contact-right {
+    width: 60%;
+  }
+
+  #submit {
+    margin-top: 30px;
+    padding: 18px 25px;
+  }
+
+  /* FOOTER */
+
+  footer {
+    width: auto;
+    padding: 0;
+    /* border: 3px solid grey; */
+  }
+
+  .container-footer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    border: 3px solid red;
+  }
+
+  .footer-logos {
+    border: 3px solid salmon;
+    width: 50%;
+  }
+
+  #jadoo p {
+    border: 3px solid black;
+    text-align: center;
+  }
+
+  .footer-support {
+    border: 3px solid yellowgreen;
+    width: auto;
+  }
+
+  .footer-applications {
+    border: 3px solid firebrick;
+    text-align: center;
+    padding-top: 40px;
+    width: 100%;
+  }
+}
+
+/* Tablet 768px */
+
+@media all and (max-width: 768px) {
+  /* SECTION CHEF */
+
+  #chef {
+    background-position: 45%;
+    padding: 40px 40px 426px 40px;
+    margin: 100px 0 0;
+  }
+
+  #chef #detail h2 {
+    background: url("../assets/souligne_rose.svg") no-repeat;
+    background-position: -5px 18%;
+    width: auto;
+  }
+
+  /* SECTION COMMANDE */
+
+  #commande {
+    background-position: 0%;
+    padding: 480px 50px 80px;
+    width: auto;
+  }
+
+  #commande h2 {
+    width: 60%;
+  }
+
+  /* FORUMULAIRE */
+
+  .container-form {
+    width: 90%;
+  }
+
+  /* FOOTER */
+
+  footer {
+    width: auto;
+    /* border: 3px solid grey; */
+    padding: 50px 30px;
+  }
+
+  .container-footer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .footer-logos {
+    /* border: 3px solid salmon; */
+    width: 50%;
+    border: 3px solid burlywood;
+  }
+
+  #jadoo {
+    border: 3px solid greenyellow;
+  }
+
+  #jadoo p {
+    border: 3px solid black;
+    text-align: center;
+  }
+
+  .footer-support {
+    width: 50%;
+  }
+
+  .footer-applications {
+    /* border: 3px solid firebrick; */
+    text-align: center;
+    margin-top: 50px;
+    width: 100%;
   }
 }
