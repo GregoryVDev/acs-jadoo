@@ -279,6 +279,7 @@ article.carte-maki figure img:first-child {
 #container-maki article {
   width: 30%;
   position: relative;
+  border-radius: 20px;
 }
 
 #container-maki article:before {
@@ -306,7 +307,7 @@ article.carte-maki figure img:first-child {
   width: 100px;
   height: 100px;
   position: absolute;
-  left: -40px;
+  left: -38px;
   bottom: -80px;
   z-index: -5;
 }
@@ -361,7 +362,6 @@ article.carte-maki figure img:first-child {
 
 .carte-maki:hover {
   background-color: white;
-  border-radius: 20px;
   box-shadow: 0px 4px 32px 5px rgba(0, 0, 0, 0.05);
 }
 
