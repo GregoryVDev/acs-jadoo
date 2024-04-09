@@ -216,11 +216,9 @@ header ul li a:hover {
   flex-wrap: wrap;
   background: url("../assets/decoration_filet.svg") no-repeat;
   background-position: 100% 30%;
-  /* border: 3px solid green; */
 }
 
 .carte {
-  /* border: 3px solid black; */
   width: 30%;
   margin: 20px;
 }
@@ -277,7 +275,6 @@ article.carte-maki figure img:first-child {
 }
 
 #container-maki article {
-  width: 30%;
   position: relative;
   border-radius: 20px;
 }
@@ -356,6 +353,7 @@ article.carte-maki figure img:first-child {
 
 .carte-maki {
   padding-bottom: 25px;
+  width: 274px;
 }
 
 /* HOVER */

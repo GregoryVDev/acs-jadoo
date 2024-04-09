@@ -8,6 +8,12 @@
     font-size: 74px;
   }
 
+  /* HEADER */
+
+  .logos {
+    margin: 50px;
+  }
+
   /* NAVBAR BURGER */
 
   nav img {
@@ -81,7 +87,7 @@
     background-position: right 40% bottom 20%;
   }
   #news #container-nouveautes .carte {
-    width: 33%;
+    width: auto;
   }
 
   #container-nouveautes .carte img {
@@ -97,18 +103,12 @@
     width: 50px;
   }
 
-  /* SECTION MAKI */
-
   #container-maki {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
     width: 100%;
-  }
-
-  #container-maki article:nth-child(4) {
-    margin-top: 10px;
   }
 
   #news .button-orange {
@@ -222,6 +222,19 @@
 /* Tablet 768px */
 
 @media all and (max-width: 768px) {
+  /* SECTION NEWS */
+
+  #news {
+    background: none;
+  }
+
+  #news #container-nouveautes {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    background-position: right 28% bottom 18%;
+  }
+
   /* SECTION CHEF */
 
   #chef {
@@ -295,5 +308,305 @@
     text-align: center;
     margin-top: 50px;
     width: 100%;
+  }
+}
+
+/* 665px */
+
+@media all and (max-width: 665px) {
+  /* SECTION NEWS */
+
+  #news h2 {
+    margin: 0;
+  }
+
+  #news #container-nouveautes {
+    flex-direction: column;
+    align-content: center;
+    margin: auto;
+    width: 100%;
+    background-position: right 28% bottom 15%;
+  }
+
+  /* FOOTER */
+}
+
+/* TELEPHONE 550px  */
+
+@media all and (max-width: 550px) {
+  /* SECTION PICTURE */
+
+  #picture {
+    text-align: center;
+  }
+
+  #picture h1 {
+    font-size: 45px;
+    background-position: left 70% bottom 5%;
+    background-size: 300px 10px;
+  }
+
+  #picture p {
+    font-size: 15px;
+    text-align: center;
+    width: 100%;
+  }
+
+  /* SECTION NEWS */
+
+  #news #container-nouveautes {
+    flex-direction: row;
+  }
+
+  #container-nouveautes .carte {
+    position: absolute;
+  }
+
+  #container-nouveautes .carte:nth-child(1) {
+    animation: slide 15s infinite;
+  }
+
+  #container-nouveautes .carte:nth-child(2) {
+    animation: slide2 15s infinite;
+  }
+
+  #container-nouveautes .carte:nth-child(3) {
+    animation: slide3 15s infinite;
+  }
+
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateX(50%);
+    }
+
+    3% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    33% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    36% {
+      opacity: 0;
+      transform: translateX(-50%);
+    }
+
+    100% {
+      opacity: 0;
+      transform: translateX(-50%);
+    }
+  }
+
+  @keyframes slide2 {
+    0% {
+      opacity: 0;
+      transform: translateX(50%);
+    }
+
+    36% {
+      opacity: 0;
+      transform: translateX(50%);
+    }
+
+    39% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    66% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    69% {
+      opacity: 0;
+      transform: translateX(-50%);
+    }
+
+    100% {
+      opacity: 0;
+      transform: translateX(-50%);
+    }
+  }
+
+  @keyframes slide3 {
+    0% {
+      opacity: 0;
+      transform: translateX(50%);
+    }
+
+    69% {
+      opacity: 0;
+      transform: translateX(50%);
+    }
+
+    71% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    98% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    100% {
+      opacity: 0;
+      transform: translateX(-50%);
+    }
+  }
+
+  #container-maki {
+    margin: 480px 0 0;
+    padding-left: 40px;
+    gap: 0px;
+    justify-content: space-between;
+  }
+
+  #news figure {
+    align-items: normal;
+    text-align: left;
+  }
+
+  #news #container-maki figcaption {
+    padding-top: 15px;
+  }
+
+  #container-maki img {
+    width: 110px;
+    height: 110px;
+    margin-right: 15px;
+  }
+
+  #container-maki figure {
+    display: flex;
+    flex-direction: row;
+    width: 490px;
+  }
+
+  .carte-maki:hover {
+    box-shadow: none;
+  }
+
+  #square,
+  #square2,
+  #square3,
+  #square4 {
+    display: none;
+  }
+
+  /* SECTION CHEF */
+
+  #chef {
+    padding-left: 0;
+    padding-top: 0;
+    background-size: 100%;
+  }
+
+  #chef h2,
+  h5 {
+    display: none;
+    width: 533px;
+    height: 356px;
+  }
+
+  #chef #video {
+    border-radius: 0px;
+    width: 533px;
+    height: 287px;
+  }
+
+  #video-lecture {
+    position: relative;
+    top: -205px;
+    right: -215px;
+    width: 110px;
+    height: 108px;
+    padding: 4px;
+  }
+
+  #video-lecture img {
+    width: 150px;
+    height: 100px;
+  }
+
+  #container-images {
+    display: flex;
+    flex-direction: column;
+    width: 533px;
+    height: 666px;
+  }
+
+  /* SECTION COMMANDE */
+
+  #commande {
+    padding: 1100px 50px 80px;
+    background: none;
+  }
+
+  #commande h4 {
+    text-align: center;
+    width: 440px;
+  }
+
+  #commande h2 {
+    text-align: center;
+    font-size: 40px;
+    width: 450px;
+  }
+
+  #container-informations h4 {
+    text-align: left;
+  }
+
+  #commande .button-orange {
+    margin: 50px auto 0 30%;
+  }
+
+  /* CONTACT */
+
+  #contact {
+    padding: 0;
+  }
+
+  .contact-left {
+    width: 1100px;
+    border-radius: 0px;
+  }
+
+  .contact-left h4 {
+    font-size: 40px;
+    font-weight: 400;
+  }
+
+  .contact-right {
+    background: none;
+    width: 0%;
+  }
+
+  /* FOOTER */
+
+  footer {
+    border: 3px solid black;
+    padding: 0;
+  }
+
+  .container-footer {
+    border: 3px solid green;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+  }
+
+  #logojadoo {
+    margin-left: 100px;
+  }
+
+  .footer-logos {
+    width: 100%;
+    margin-bottom: 50px;
   }
 }
