@@ -270,45 +270,6 @@
   .contact-left h5 {
     text-align: left;
   }
-
-  /* FOOTER */
-
-  footer {
-    width: auto;
-    /* border: 3px solid grey; */
-    padding: 50px 30px;
-  }
-
-  .container-footer {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-  }
-
-  .footer-logos {
-    /* border: 3px solid salmon; */
-    width: 50%;
-  }
-
-  /* #jadoo {
-  } */
-
-  #jadoo p {
-    text-align: center;
-  }
-
-  .footer-support {
-    width: 50%;
-  }
-
-  .footer-applications {
-    /* border: 3px solid firebrick; */
-    text-align: center;
-    margin-top: 50px;
-    width: 100%;
-  }
 }
 
 /* 665px */
@@ -328,14 +289,51 @@
     background-position: right 28% bottom 15%;
   }
 
+  #square,
+  #square2,
+  #square3,
+  #square4 {
+    display: none;
+  }
   /* FOOTER */
+
+  footer {
+    padding: 0;
+  }
+
+  .container-footer {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 40px 5px;
+  }
+
+  #logojadoo {
+    margin-left: 160px;
+  }
+
+  .footer-logos {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .footer-support {
+    width: auto;
+  }
+
+  .footer-applications {
+    width: auto;
+  }
+
+  footer > p {
+    margin: 0;
+    padding: 40px 0 25px;
+  }
 }
 
 /* TELEPHONE 550px  */
 
 @media all and (max-width: 550px) {
   /* SECTION PICTURE */
-
   #picture {
     text-align: center;
   }
@@ -503,7 +501,6 @@
   #chef {
     padding-left: 0;
     padding-top: 0;
-    background-size: 100%;
   }
 
   #chef h2,
@@ -555,7 +552,7 @@
   #commande h2 {
     text-align: center;
     font-size: 40px;
-    width: 450px;
+    width: 440px;
   }
 
   #container-informations h4 {
@@ -590,15 +587,13 @@
   /* FOOTER */
 
   footer {
-    border: 3px solid black;
     padding: 0;
   }
 
   .container-footer {
-    border: 3px solid green;
     display: flex;
     flex-direction: column;
-    padding: 40px;
+    padding: 40px 40px 5px;
   }
 
   #logojadoo {
@@ -608,5 +603,14 @@
   .footer-logos {
     width: 100%;
     margin-bottom: 50px;
+  }
+
+  .footer-support {
+    width: auto;
+  }
+
+  footer > p {
+    margin: 0;
+    padding: 40px 0 25px;
   }
 }
