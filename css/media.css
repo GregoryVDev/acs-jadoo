@@ -56,6 +56,7 @@
   nav.active ul {
     left: 0;
     display: flex;
+    transition: 0.5s ease-in-out;
   }
 
   /* SECTION PICTURE */
@@ -324,14 +325,51 @@
     background-position: right 28% bottom 15%;
   }
 
+  #square,
+  #square2,
+  #square3,
+  #square4 {
+    display: none;
+  }
   /* FOOTER */
+
+  footer {
+    padding: 0;
+  }
+
+  .container-footer {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 40px 5px;
+  }
+
+  #logojadoo {
+    margin-left: 160px;
+  }
+
+  .footer-logos {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .footer-support {
+    width: auto;
+  }
+
+  .footer-applications {
+    width: auto;
+  }
+
+  footer > p {
+    margin: 0;
+    padding: 40px 0 25px;
+  }
 }
 
 /* TELEPHONE 550px  */
 
 @media all and (max-width: 550px) {
   /* SECTION PICTURE */
-
   #picture {
     text-align: center;
   }
@@ -499,7 +537,6 @@
   #chef {
     padding-left: 0;
     padding-top: 0;
-    background-size: 100%;
   }
 
   #chef h2,
@@ -551,7 +588,7 @@
   #commande h2 {
     text-align: center;
     font-size: 40px;
-    width: 450px;
+    width: 440px;
   }
 
   #container-informations h4 {
@@ -592,7 +629,7 @@
   .container-footer {
     display: flex;
     flex-direction: column;
-    padding: 40px;
+    padding: 40px 40px 5px;
   }
 
   #logojadoo {
@@ -602,5 +639,14 @@
   .footer-logos {
     width: 100%;
     margin-bottom: 50px;
+  }
+
+  .footer-support {
+    width: auto;
+  }
+
+  footer > p {
+    margin: 0;
+    padding: 40px 0 25px;
   }
 }

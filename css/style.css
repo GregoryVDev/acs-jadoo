@@ -814,19 +814,6 @@ footer > p {
   animation: bounce 0.5s ease infinite alternate;
 }
 
-#anim-jadoo:hover {
-  animation: rotate 0.5s ease;
-}
-
-@keyframes rotate {
-  from {
-    transform: rotate(0turn);
-  }
-  to {
-    transform: rotate(1turn);
-  }
-}
-
 @keyframes bounce {
   from {
     transform: translateY(0);
