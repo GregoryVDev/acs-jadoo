@@ -188,7 +188,6 @@
   footer {
     width: auto;
     padding: 0;
-    /* border: 3px solid grey; */
   }
 
   .container-footer {
@@ -275,7 +274,6 @@
 
   footer {
     width: auto;
-    /* border: 3px solid grey; */
     padding: 50px 30px;
   }
 
@@ -288,7 +286,6 @@
   }
 
   .footer-logos {
-    /* border: 3px solid salmon; */
     width: 50%;
   }
 
@@ -304,7 +301,6 @@
   }
 
   .footer-applications {
-    /* border: 3px solid firebrick; */
     text-align: center;
     margin-top: 50px;
     width: 100%;
@@ -590,12 +586,10 @@
   /* FOOTER */
 
   footer {
-    border: 3px solid black;
     padding: 0;
   }
 
   .container-footer {
-    border: 3px solid green;
     display: flex;
     flex-direction: column;
     padding: 40px;
