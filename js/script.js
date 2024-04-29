@@ -2,19 +2,19 @@
 
 const cubes = [
   {
-    div: document.getElementById("div1"),
+    div: document.getElementById("maki1"),
     cube: document.getElementById("square"),
   },
   {
-    div: document.getElementById("div2"),
+    div: document.getElementById("maki2"),
     cube: document.getElementById("square2"),
   },
   {
-    div: document.getElementById("div3"),
+    div: document.getElementById("maki3"),
     cube: document.getElementById("square3"),
   },
   {
-    div: document.getElementById("div4"),
+    div: document.getElementById("maki4"),
     cube: document.getElementById("square4"),
   },
 ];
