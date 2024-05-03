@@ -96,7 +96,7 @@ header {
   width: 100%;
   background-color: white;
   position: sticky;
-  top: 0px;
+  top: -1px;
   z-index: 2;
 }
 
